@@ -235,6 +235,8 @@ node_3, 0, 3, 3, 0
 node_4, 7, 0, 6, 0
 ```
 
+Grafo correspondente:
+
 <p align="center">
   <img src="readme_imgs/graph.png" width="200" alt="Grafo correspondente">
 </p>
