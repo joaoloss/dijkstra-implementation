@@ -29,6 +29,15 @@ Arthur Tosi (2023100573) | João P. Loss (2023102068) | Theo de Sá (2023101082)
 
 O programa tem como finalidade comparar a performance do algoritmo de Dijkstra, utilizado para resolver o problema dos caminhos mínimos de fonte única, empregando duas estruturas auxiliares distintas: lista encadeada e min-heap.
 
+### Conteúdos explorados
+- Modularização com TADs opacos
+- Implementação da lista encadeada
+- Implementação da heap mínima binária
+- Representação computacional de grafos
+- Implementação do algoritmo Dijkstra
+- Alocação dinâmica de memória
+- Makefile
+  
 ---
 
 ## Arquivos e Suas Funcionalidades
