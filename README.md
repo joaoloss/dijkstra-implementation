@@ -61,8 +61,6 @@ Este arquivo implementa uma **lista simplesmente encadeada sem sentinela** como 
 
 Para otimizar operações de inserção e decrescimento de custo optou-se por não ordenar a lista.
 
----
-
 **Funções Chave**:  
 
 - `insertValue`: Insere um novo nó no início da lista.  
@@ -77,7 +75,6 @@ Este arquivo implementa uma **heap mínima binária** para gerenciar a fila de p
 
 Para otimizar operações de busca optou-se por armazenar um vetor de posições dentro da estrutura, o que deixa constante o tempo de busca (apesar do aumento do consumo de memória). No vetor de posições, o índice i fornece o índice da posição do nó de id i na heap.
 
----
 **Funções Chave**:
 
 - `insereHeap`: Insere um novo nó na heap e corrige sua posição.  
