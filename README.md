@@ -23,6 +23,8 @@ Arthur Tosi (2023100573) | João P. Loss (2023102068) | Theo de Sá (2023101082)
   - [Saída](#saída)
   - [Compilação do Programa](#compilação-do-programa)
 
+---
+
 ## Introdução
 
 O programa tem como finalidade comparar a performance do algoritmo de Dijkstra, utilizado para resolver o problema dos caminhos mínimos de fonte única, empregando duas estruturas auxiliares distintas: lista encadeada e min-heap.
@@ -41,8 +43,6 @@ Este arquivo define uma estrutura básica chamada `Node` contendo três campos: 
 - `criaNode`: Cria um novo nó com ID, peso e próximo nó especificados.
 - `destroiNode`: Libera a memória alocada para o nó.
 
----
-
 ### `grafo.c`
 
 Este arquivo implementa a **estrutura do grafo** utilizando **listas de adjacências**. Ele é responsável por construir o grafo a partir do arquivo de entrada e fornecer funções de acesso e liberação de memória.
@@ -52,8 +52,6 @@ Este arquivo implementa a **estrutura do grafo** utilizando **listas de adjacên
 - `preencheListaAdj`: Lê o arquivo de entrada e constrói o grafo.  
 - `getAdjacentes`: Retorna a lista de nós adjacentes de um vértice.  
 - `destroiListaAdj`: Libera a memória alocada para o grafo.  
-
----
 
 ### `linked-list.c`
 
@@ -66,8 +64,6 @@ Para otimizar operações de inserção e decrescimento de custo optou-se por n�
 - `insertValue`: Insere um novo nó no início da lista.  
 - `removeMinNode`: Percorre a lista para encontrar e remover o nó com menor peso.  
 - `getNodeById`: Busca um nó pelo ID na lista.
-  
----
 
 ### `heap.c`
 
@@ -80,8 +76,6 @@ Para otimizar operações de busca optou-se por armazenar um vetor de posições
 - `insereHeap`: Insere um novo nó na heap e corrige sua posição.  
 - `extraiMenorElemento`: Remove e retorna o nó com menor peso (raiz da heap).  
 - `decresceDistancia`: Decresce o peso e atualiza o pai de um nó, ajustando sua posição na heap.
-
----
 
 ### `main.c`
 
@@ -102,8 +96,6 @@ Programa cliente que **manipula os TADs criados** e **salva os resultados** em u
 **Integração**:  
   
 - Utiliza os módulos `Grafo`, `Dijkstra` e `Node` para construir o grafo, calcular os caminhos mínimos e gerenciar os nós.  
-
----
 
 ### `dijkstra.c`
 
@@ -151,8 +143,6 @@ V\*O(log(V)) + V\*O(log(V)) + E\*O(1) + E\*O(log(V)) = O((V + E)\*log(V)) = **O(
 **Desvantagens:**
 
 ❌ Implementação mais complexa.
-
----
 
 ## Implementação com Lista Encadeada  
 
@@ -206,6 +196,8 @@ Para cada grafo, foi analisado o tempo total decorrido e a quantidade de bytes a
 
 A análise evidencia como a escolha da estrutura de dados impacta diretamente no desempenho de um mesmo algoritmo.  
 
+---
+
 ## Parâmetros de chamada
 
 Os nomes dos arquivos de entrada e saída, respectivamente, devem ser fornecidos na chamada do programa.
@@ -215,6 +207,8 @@ Os nomes dos arquivos de entrada e saída, respectivamente, devem ser fornecidos
 ```none
 ./prog grafo_entrada.txt resultado_dijkstra.txt
 ```
+
+---
 
 ## Entrada
 
@@ -241,6 +235,8 @@ Grafo correspondente:
   <img src="readme_imgs/graph.png" width="200" alt="Grafo correspondente">
 </p>
 
+---
+
 ## Saída
 
 A saída do do programa é salva em um arquivo de texto, contendo os caminhos de menor custo dos nós até a fonte, em ordem crescente de custo.
@@ -252,6 +248,8 @@ SHORTEST PATH TO node_1: node_1 <- node_3 <- node_0 (Distance: 8.00)
 SHORTEST PATH TO node_2: node_2 <- node_3 <- node_0 (Distance: 8.00)
 SHORTEST PATH TO node_4: node_4 <- node_2 <- node_3 <- node_0 (Distance: 12.00)
 ```
+
+---
 
 ## Compilação do Programa
 
